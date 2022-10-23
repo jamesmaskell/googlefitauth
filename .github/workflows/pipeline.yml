@@ -34,4 +34,4 @@ jobs:
         entry_point: 'execute'
         runtime: 'python39'
         region: 'europe-west2'
-        env_vars: 'GOOGLE_FIT_REDIRECT_HOST=europe-west2-elevated-apex-308311.cloudfunctions.net,GOOGLE_FIT_CLIENT_ID=857227057976-csoa4f8q00qots6ir53vc58ha0fqljvl.apps.googleusercontent.com,GARMIN_USERNAME=jameslmaskell@gmail.com,GOOGLE_FIT_CLIENT_SECRET=${{ secrets.GOOGLE_FIT_CLIENT_SECRET }}'
+        env_vars: 'GOOGLE_FIT_REDIRECT_HOST=europe-west2-elevated-apex-308311.cloudfunctions.net,GOOGLE_FIT_CLIENT_ID=857227057976-csoa4f8q00qots6ir53vc58ha0fqljvl.apps.googleusercontent.com,GOOGLE_FIT_CLIENT_SECRET=${{ secrets.GOOGLE_FIT_CLIENT_SECRET }}'
