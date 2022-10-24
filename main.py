@@ -21,7 +21,7 @@ def execute(request):
     db = datastore.Client()
     key = db.key('fit_tokens', 'fit_tokens')
     entity = datastore.Entity(key=key)
-    entity.update({'token': token['access_token']})
+    entity.update(token)
     db.put(entity)
 
     return ""
