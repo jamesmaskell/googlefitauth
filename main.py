@@ -14,7 +14,7 @@ scope = [
 ]
 
 def execute(request):
-    url = f"https://{request.host}/googlefitauth?state={request.args['state']}&code={urllib.parse.quote_plus(request.args['code'])}&scope={urllib.parse.quote_plus(scope[0])}"
+    url = f"https://localhost/googlefitauth?state=try_sample_request&code=4%2F0ARtbsJrXL9CFg-WynvhXSXel6x4G1UQvrA39BqrT8xrBqsuSU7enPJKs1bLCVryamcHcnQ&scope={urllib.parse.quote_plus(scope[0])}"
     google = OAuth2Session(client_id, scope=scope, redirect_uri=redirect_uri)
     token = google.fetch_token(token_url, client_secret=client_secret, authorization_response=url)
 
